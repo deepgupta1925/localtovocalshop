@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local To Vocal Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Local to Vocal Shop</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+    </header>
+    </header>
+
+    <div id="searchResults" class="search-results">
+        <!-- Search results will be displayed here -->
+    </div>
+
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+        <div id="totalPrice" class="total-price">Total: $0.00</div>
+        <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+
+
+    <body>
+        <header>
+            <h1>Local to Vocal Shop</h1>
+        </header>
+
+        <section class="product" id="product 1">
+            <img src="https://i5.walmartimages.com/asr/8f2e34d2-7a73-4d9a-a918-88946c28e795_1.25ba94b8fa860dc26dca3da9b496202b.jpeg" alt="Product 1">
+            <div class="product-details">
+                <h2>HOODY BLUE</h2>
+                <p>Price: 498</p>
+                <button onclick="addToCart('Product 1', 498)">Add to Cart</button>
+                <button onclick="orderNow('Product 1', 498">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product 2">
+            <img src="https://johnlewis.scene7.com/is/image/JohnLewis/003545091?$rsp-pdp-port-1440$" alt="Product 2">
+            <div class="product-details">
+                <h2>HOODY BLACK</h2>
+                <p>Price: 499</p>
+                <button onclick="addToCart('Product 2', 499)">Add to Cart</button>
+                <button onclick="orderNow('Product 2', 499)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product3">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0219%2F7173%2F0504%2Fproducts%2FHEARTBREAK_HOTEL_HOODIE_CAN_T_GET_ENOUGH_SWEATPANTS_27.07.21_05.jpg%3Fv%3D1627867589&f=1&nofb=1&ipt=18062149c6ae034bb0e31758ed70e84f04e894231b240b05e3b40158415be2f7&ipo=images"
+                alt="Product 3">
+            <div class="product-details">
+                <h2>HOODY GIRLS WHITE</h2>
+                <p>Price: 599</p>
+                <button onclick="addToCart('Product 3', 599)">Add to Cart</button>
+                <button onclick="orderNow('Product 3', 599)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product4">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2638%2F7858%2Fproducts%2F11k_498a0c4f-06bc-40fa-9597-fc2bd270a81f_1024x1024%402x.jpg%3Fv%3D1535495783&f=1&nofb=1&ipt=9e121b8c61cbbb7311ab75c92fb6ac894c72ce1d8ba7e311e0474d5d87468dfb&ipo=images"
+                alt="Product 4">
+            <div class="product-details">
+                <h2>CROP TOP BLACK</h2>
+                <p>Price: 199</p>
+                <button onclick="addToCart('Product 4', 199)">Add to Cart</button>
+                <button onclick="orderNow('Product 4', 199)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product5">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb0%2F91%2F3e%2Fb0913edc16a7375ecd92ae31942b168f.png&f=1&nofb=1&ipt=261fa066a16d6bb697a0c23c56c11ed34776eb0f2c58368523a3e91e208a424f&ipo=images" alt="Product 5">
+            <div class="product-details">
+                <h2>CROP TOP WHITE</h2>
+                <p>Price: 299</p>
+                <button onclick="addToCart('Product 5', 299)">Add to Cart</button>
+                <button onclick="orderNow('Product 5', 299)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product6">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-img.prettylittlething.com%2F3%2F1%2F2%2F8%2F312842ec499424fb61daac9580a03f6e6824ac56_cmk6717_1.jpg&f=1&nofb=1&ipt=17b94d2b95c229ca44315f59c2c7931c3848d7a6b687dc7a82ffb281e15e2cb7&ipo=images"
+                alt="Product 6">
+            <div class="product-details">
+                <h2>BODYCON DRESS BLACK</h2>
+                <p>Price: 298</p>
+                <button onclick="addToCart('Product 6', 298)">Add to Cart</button>
+                <button onclick="orderNow('Product 6', 298)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product7">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.missguided.com%2Fs%2Fmissguided%2FDE928648_set%2F4%2Fblue-strappy-cami-bodycon-mini-dress.jpg%3F%24product-page__zoom--3x%24&f=1&nofb=1&ipt=28d66540f5346100cf91685773f557a00f9e9d5f1ba55d32e8cc8e8b8c62f378&ipo=images"
+                alt="Product 7">
+            <div class="product-details">
+                <h2>BODYCON DRESS BLUE</h2>
+                <p>Price: 398</p>
+                <button onclick="addToCart('Product 7', 398)">Add to Cart</button>
+                <button onclick="orderNow('Product 7', 398)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product8">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F71Cs1rpicWL._UY606_.jpg&f=1&nofb=1&ipt=591662d226171507d2cbdf1ba6d5aac53eaf58df85776623b2939924592da67c&ipo=images" alt="Product 8">
+            <div class="product-details">
+                <h2>DANGRI DRESS BLACK</h2>
+                <p>Price: 699</p>
+                <button onclick="addToCart('Product 8', 699)">Add to Cart</button>
+                <button onclick="orderNow('Product 8', 699)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product1">
+            <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/5393414/2018/4/20/11524204559129-na-6271524204558926-1.jpg" alt="Product 9">
+            <div class="product-details">
+                <h2>DANGRI DRESS BLUE</h2>
+                <p>Price: 799</p>
+                <button onclick="addToCart('Product 9', 799)">Add to Cart</button>
+                <button onclick="orderNow('Product 9', 799)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product10">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0293%2F9277%2Fproducts%2FFashion_Nova_05-17-17_Studio_2-503.jpg%3Fv%3D1519933818&f=1&nofb=1&ipt=cd592a1b00abed24748e055d9237a381435a781ad8bf12329bcb874c5a74a9de&ipo=images"
+                alt="Product 10">
+            <div class="product-details">
+                <h2>JEANS BLACK</h2>
+                <p>Price: 545</p>
+                <button onclick="addToCart('Product 10', 545)">Add to Cart</button>
+                <button onclick="orderNow('Product 10', 545)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product11">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.glamour.com%2Fphotos%2F56e1f55a1632e6ca44c173dc%2Fmaster%2Fw_1280%252Cc_limit%2Ffashion-2016-01-winter-white-jeans-sofis-snapshots-main.jpg&f=1&nofb=1&ipt=ad3d26442677fd5c3c781061fad60d1ac5bd23dbf57fc63d2b64df005d41f88d&ipo=images"
+                alt="Product 11">
+            <div class="product-details">
+                <h2>JEANS WHITE</h2>
+                <p>Price: 645</p>
+                <button onclick="addToCart('Product 11', 645)">Add to Cart</button>
+                <button onclick="orderNow('Product 11', 645)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product2">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn1.bambinifashion.com%2Fimg%2Fp%2F1%2F8%2F3%2F9%2F8%2F2%2F183982--product.jpg&f=1&nofb=1&ipt=69081fce8cf305a4e2b0744d9b147aa309b573f65a60a4f3fd38d41cd4733d9c&ipo=images" alt="Product 12">
+            <div class="product-details">
+                <h2>T-SHIRT BLACK/h2>
+                    <p>Price: 999</p>
+                    <button onclick="addToCart('Product 12', 999)">Add to Cart</button>
+                    <button onclick="orderNow('Product 12',999)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product1">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.21MbPBznHGLqX_bXbjGulgHaJ4%26pid%3DApi&f=1&ipt=731db39811ffeddf09fb2676ffcab11d6ba03fbe0c3eccf4812d2a8214f1c9df&ipo=images" alt="Product 13">
+            <div class="product-details">
+                <h2>T-SHIRT WHITE</h2>
+                <p>Price: 899</p>
+                <button onclick="addToCart('Product 13', 899)">Add to Cart</button>
+                <button onclick="orderNow('Product 13', 899)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product14">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.sportsdirect.com%2Fimages%2Fimgzoom%2F45%2F45309803_xxl.jpg&f=1&nofb=1&ipt=881014f718d12f89c0770293e8b4e57c81d44bf5c5a6e7e969824382a6c323b3&ipo=images" alt="Product 2">
+            <div class="product-details">
+                <h2>SHORTS BLACK</h2>
+                <p>Price: 799</p>
+                <button onclick="addToCart('Product 14', 799)">Add to Cart</button>
+                <button onclick="orderNow('Product 14', 799)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product15">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.yGsjyCFlhVnrTg11FwRynQHaJQ%26pid%3DApi&f=1&ipt=1ec12cb3a58693507bea719c5953feb673b606b6f40846f40590faeca44c81d2&ipo=images" alt="Product 15">
+            <div class="product-details">
+                <h2>SHORTS WHITE</h2>
+                <p>Price: 549</p>
+                <button onclick="addToCart('Product 15', 549)">Add to Cart</button>
+                <button onclick="orderNow('Product 15', 549)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product16">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Dn5DbvTLRtwAk0I5gSpKegHaE8%26pid%3DApi&f=1&ipt=29fc765b6b9cbbe68d21df08c4844d3efe38721941bb49debc62ec99b051548b&ipo=images" alt="Product 16">
+            <div class="product-details">
+                <h2>5-PIECE BLACK SUITE</h2>
+                <p>Price: 1049</p>
+                <button onclick="addToCart('Product 16', 1049)">Add to Cart</button>
+                <button onclick="orderNow('Product 16', 1049)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product17">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa9%2F53%2F43%2Fa953436a95fd2e48c711f9ae973deaae.jpg&f=1&nofb=1&ipt=ac3be54da4b7ede8718599afbebfd3d69411a03d7cca90817d6acb128c7e8ea9&ipo=images" alt="Product 17">
+            <div class="product-details">
+                <h2>5-PIECE BLUE SUITE</h2>
+                <p>Price: 1011</p>
+                <button onclick="addToCart('Product 17', 1011)">Add to Cart</button>
+                <button onclick="orderNow('Product 17', 1011)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product18">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.19zxShGf34mYJJqELu2shAHaHa%26pid%3DApi&f=1&ipt=4429a8909bf94afaaf8d0a0986dad39cb965e1be6bbfbe1832276ff1a48a9c12&ipo=images" alt="Product 2">
+            <div class="product-details">
+                <h2>SOCKS BLUE</h2>
+                <p>Price: 1010</p>
+                <button onclick="addToCart('Product 18', 1010)">Add to Cart</button>
+                <button onclick="orderNow('Product 18', 1010)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product19">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fasr%2F0320dd7e-0d67-4920-8e80-655551ed64b1_1.290b270cebb16ebab9780be37cf4d39b.jpeg&f=1&nofb=1&ipt=40761b15b57f8246723e8eeb06410068d8ebb65659ed0c6ce032ef632b0ee0da&ipo=images"
+                alt="Product 19">
+            <div class="product-details">
+                <h2>SOCKS BLACK</h2>
+                <p>Price: 99</p>
+                <button onclick="addToCart('Product 19', 99)">Add to Cart</button>
+                <button onclick="orderNow('Product 19', 99)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product20">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftipsandbeauty.com%2Fwp-content%2Fuploads%2F2018%2F10%2Fplain-black-kurti-design-4-581x840.jpg&f=1&nofb=1&ipt=05c96da2ec2ca695a9c42b9e80112ddd3d232787e3fb6aa68b7551c4cb147e47&ipo=images"
+                alt="Product 20">
+            <div class="product-details">
+                <h2>KURTI BLACK</h2>
+                <p>Price: 149</p>
+                <button onclick="addToCart('Product 20', 149)">Add to Cart</button>
+                <button onclick="orderNow('Product 20', 149)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product21">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.bJxgPssTy-90RVWd-97DqgHaHa%26pid%3DApi&f=1&ipt=b76d7678da8c6cf328234a5701d370f9084c5b4b4f1bd9707200fc10f9e7fd82&ipo=images" alt="Product 21">
+            <div class="product-details">
+                <h2> KURTI BLUE </h2>
+                <p>Price: 159</p>
+                <button onclick="addToCart('Product 21', 159)">Add to Cart</button>
+                <button onclick="orderNow('Product 21', 159)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product22">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.oneills.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F7c0093f75f453d86e7d165133c528de2%2Fn%2Fy%2Fny-black.jpg&f=1&nofb=1&ipt=515c470ae89595545aad110b53a37db768833a2b7d627e0d69814ef4338d3d31&ipo=images"
+                alt="Product 22">
+            <div class="product-details">
+                <h2>CAP BLACK</h2>
+                <p>Price: 195</p>
+                <button onclick="addToCart('Product 22', 195)">Add to Cart</button>
+                <button onclick="orderNow('Product 22', 195)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product1">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.2OnWCPc9Ly59VQZcnvXbYQHaGH%26pid%3DApi&f=1&ipt=292e106a866af710d313988acdb32563ab517943bad647ae2239d0327feb072e&ipo=images" alt="Product 23">
+            <div class="product-details">
+                <h2>CAP WHITE</h2>
+                <p>Price: 1999</p>
+                <button onclick="addToCart('Product 23', 1999)">Add to Cart</button>
+                <button onclick="orderNow('Product 23', 1999)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product24">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.gXflR_QpPWfsBkQHu8ysfQHaHf%26pid%3DApi&f=1&ipt=7b7ca62deb1192bbea5beacee6999b400f5ebb6d538379aaad6709dcbc786ec7&ipo=images" alt="Product 24">
+            <div class="product-details">
+                <h2>SHOES BLACK</h2>
+                <p>Price: 2999</p>
+                <button onclick="addToCart('Product 24', 2999)">Add to Cart</button>
+                <button onclick="orderNow('Product 24', 2999)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product25">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1S2hSLVXXXXXdapXXq6xXFXXX8%2F2017-New-Style-White-Women-s-Shoes-Casual-Single-Shoes-Breathable-Flats-Shoes-Woman-Fashion-Low.jpg&f=1&nofb=1&ipt=8599d9cfeec7036303ba59e4fa8303eeb6e049a8d6e497c34bdb03d0baaa1f25&ipo=images"
+                alt="Product 25">
+            <div class="product-details">
+                <h2>SHOES WHITE</h2>
+                <p>Price: 799</p>
+                <button onclick="addToCart('Product 25', 799)">Add to Cart</button>
+                <button onclick="orderNow('Product 25', 799)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="product" id="product26">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.4P6OGK4P2-eZiekCyQvdWAHaHa%26pid%3DApi&f=1&ipt=131545340520d092fbc20a1c710217e0e6ee61d82769a0e4819077bfa829060f&ipo=images" alt="Product 26">
+            <div class="product-details">
+                <h2>SPECTS</h2>
+                <p>Price: 525</p>
+                <button onclick="addToCart('Product 26', 525)">Add to Cart</button>
+                <button onclick="orderNow('Product 26', 525)">Order Now</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+        </section>
+
+        <script src="script.js"></script>
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
